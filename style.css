@@ -27,7 +27,7 @@
     background-color: rgba(160, 241, 241, 0.471)
 }
 .text{
-
+    animation: rotate 2s infinite;
     text-align: center;
     font-size: 20px;
     font-size: 50px;
@@ -40,4 +40,16 @@
 }
 body{
     background-color: azure;
+}
+
+@keyframes rotate {
+    0%{
+    transform: rotate(-30deg);
+    }
+    50% {
+    transform: rotate(30deg);
+    }
+    100% {
+    transform: rotate(-30deg);
+    }
 }
